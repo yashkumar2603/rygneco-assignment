@@ -4,7 +4,7 @@
 https://rygneco-assignment.vercel.app/
 
 ## Description
-Personal Task Tracker is a simple, responsive React application for managing personal tasks. It features a basic login system (username and password stored in localStorage), allowing users to add, edit, delete, and filter tasks. All data persists across sessions using the browser's localStorage.
+Personal Task Tracker is a simple, responsive React application for managing personal tasks. It features a basic login system (username stored in localStorage), allowing users to add, edit, delete, and filter tasks. All data persists across sessions using the browser's localStorage.
 
 ## Features
 - Username and password login (credentials stored in localStorage)
