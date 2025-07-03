@@ -1,0 +1,159 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9fb;
+  color: #222;
+}
+  
+.app-container {
+  max-width: 600px;
+  margin: 36px auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.cancel-btn {
+  background: #eee;
+  color: #333;
+}
+
+.task-filter {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.task-filter button {
+  border: none;
+  background: #eee;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-filter .active {
+  background: #1976d2;
+  color: #fff;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f5f6fa;
+  border-radius: 6px;
+  padding: 12px;
+  border-left: 4px solid #1976d2;
+  transition: background 0.2s;
+}
+
+.task-item.completed {
+  background: #e0e0e0;
+  border-left: 4px solid #43a047;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-item-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-title {
+  font-weight: 600;
+}
+
+.task-date {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.task-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edit-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty-state {
+  color: #888;
+  text-align: center;
+  margin-top: 24px;
+}
+
+@media (max-width: 700px) {
+  .app-container {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 8px;
+  }
+}
